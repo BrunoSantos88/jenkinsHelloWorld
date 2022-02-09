@@ -4,8 +4,8 @@ pipeline {
     parameters {
         string(name: 'artifact_path', defaultValue: '/var/lib/jenkins/workspace/Teste-Pipeline-EC2/target/*.war')
 		string(name: 'certificate_path', defaultValue: '/var/lib/jenkins/certificate/tomcat-jenkins.pem', description: 'Certificate Path')
-        string(name: 'tomcat_dev', defaultValue: 'ec2-34-219-5-59.us-west-2.compute.amazonaws.com', description: 'Dev Server')
-        string(name: 'tomcat_qa', defaultValue: 'ec2-34-220-166-119.us-west-2.compute.amazonaws.com', description: 'QA Server')
+        string(name: 'tomcat_dev', defaultValue: 'ec2-54-208-43-229.compute-1.amazonaws.com', description: 'Dev Server')
+        string(name: 'tomcat_qa', defaultValue: 'ec2-54-208-43-229.compute-1.amazonaws.com', description: 'QA Server')
     }
 
     triggers {
